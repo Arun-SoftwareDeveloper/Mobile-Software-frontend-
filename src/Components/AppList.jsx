@@ -12,7 +12,7 @@ function AppList() {
   useEffect(() => {
     const fetchApps = async () => {
       try {
-        const response = await axios.get(`BackendApi/app/appsList`);
+        const response = await axios.get(`${BackendApi}/app/appsList`);
         setAppList(response.data);
       } catch (error) {
         console.log(`Internal Server Error`);
