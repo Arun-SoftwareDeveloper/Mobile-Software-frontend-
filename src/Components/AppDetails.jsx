@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import BackendApi from "../BackendApi";
 
 function AppDetails() {
   const { id } = useParams();
@@ -10,7 +11,7 @@ function AppDetails() {
   useEffect(() => {
     const fetchAppDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/app/${id}`);
+        const response = await axios.get(`${BackendApi}/app/${id}`);
         console.log(response.data); // Log the data to inspect the structure
         setApp(response.data);
       } catch (error) {

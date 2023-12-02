@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import BackendApi from "../BackendApi";
 
 function SwipeAppsList() {
   const [apps, setApps] = useState([]);
@@ -7,7 +8,7 @@ function SwipeAppsList() {
   useEffect(() => {
     const fetchApps = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/app/appsList`);
+        const response = await axios.get(`${BackendApi}/app/appsList`);
         setApps(response.data);
       } catch (error) {
         console.log(`Internal Server Error`);

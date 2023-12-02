@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "../Styles/AppList.css"; // Import the CSS file
+import BackendApi from "../BackendApi";
 
 function AppList() {
   const [appList, setAppList] = useState([]);
@@ -11,7 +12,7 @@ function AppList() {
   useEffect(() => {
     const fetchApps = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/app/appsList`);
+        const response = await axios.get(`BackendApi/app/appsList`);
         setAppList(response.data);
       } catch (error) {
         console.log(`Internal Server Error`);
