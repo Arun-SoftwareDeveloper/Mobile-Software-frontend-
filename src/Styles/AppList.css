@@ -15,7 +15,7 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px; /* Add a gap between app items */
+  gap: 50px; /* Add a gap between app items */
 }
 
 .app-item {
