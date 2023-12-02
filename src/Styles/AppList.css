@@ -1,0 +1,49 @@
+/* AppList.css */
+
+.app-list-container {
+  margin-top: 20px;
+}
+
+.app-list-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.app-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Add a gap between app items */
+}
+
+.app-item {
+  margin: 10px;
+}
+
+.app-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.app-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-icon {
+  width: 50px; /* Adjust the icon size */
+  height: 50px; /* Adjust the icon size */
+  margin-bottom: 5px;
+}
+
+.app-name {
+  font-size: 14px;
+  margin-top: 5px;
+}

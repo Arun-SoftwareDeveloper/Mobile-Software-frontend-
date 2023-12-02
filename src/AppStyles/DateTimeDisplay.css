@@ -1,0 +1,19 @@
+/* DateTimeDisplay.css */
+
+.date-time {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.date-time p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.date-time p:first-child {
+  color: #333;
+}
+
+.date-time p:last-child {
+  color: #888;
+}

@@ -1,0 +1,57 @@
+.dial-pad {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.display {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.clear-button {
+  grid-column: span 3;
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.call-button {
+  grid-column: span 3;
+  background-color: #4caf50;
+  color: white;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button:active {
+  background-color: #d1d1d1;
+}
