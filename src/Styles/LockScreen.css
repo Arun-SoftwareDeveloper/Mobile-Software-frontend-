@@ -1,0 +1,48 @@
+/* LockScreen.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.lock-screen-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px;
+  width: 80px;
+}
+
+/* Display buttons in three columns */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Optional styling for the error message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}

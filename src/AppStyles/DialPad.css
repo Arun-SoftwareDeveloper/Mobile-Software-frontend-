@@ -1,7 +1,7 @@
 .dial-pad {
+  display: grid;
   width: 300px;
   margin: auto;
-  text-align: center;
   border: 2px solid #ccc;
   border-radius: 5px;
   padding: 10px;
