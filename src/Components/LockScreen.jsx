@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../Styles/LockScreen.css";
 
 const LockScreen = () => {
+  const navigate = useNavigate();
   const [input, setInput] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -13,8 +15,8 @@ const LockScreen = () => {
       setErrorMessage("");
     } else if (value === "unlock") {
       if (input === correctPassword) {
-        // Password is correct, redirect to /home or perform desired action
-        window.location.href = "/home";
+        // Password is correct, navigate to /home
+        navigate("/home");
       } else {
         setErrorMessage("Incorrect password. Try again.");
         setInput("");
